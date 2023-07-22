@@ -1,0 +1,4 @@
+/newenv
+/__pycache__
+.env
+get-pip.py

@@ -1,0 +1,34 @@
+version: '3.7'
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./AI_Blog:/usr/share/nginx/html
+  database:
+    image: 'postgres:latest'
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres 
+      POSTGRES_PASSWORD: titkosjelszo
+      POSTGRES_DB: database
+    networks:
+      - mynet
+  api:
+    build: ./server
+    ports:
+      - 3000:80
+    volumes:
+      - ./app/:/app
+    restart: on-failure
+    depends_on:
+      - database
+    networks:
+      - mynet
+networks:
+  mynet:
+    driver: bridge
+    ipam:
+      driver: default
