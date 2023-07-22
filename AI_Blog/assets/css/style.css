@@ -2,9 +2,9 @@
     --primary-color: #fff;
     --secondary-color: #2F2F2F;
 }
-.dark-mode{
-    --primary-color:#131313;
-    --secondary-color:#fff;
+.dark-mode {
+    --primary-color: #131313;
+    --secondary-color: #fff;
 }
 html {
     display:unset;
@@ -71,7 +71,7 @@ img:hover{opacity:0.75}
 .header_top_right{float:left; display:inline; width:50%; text-align:right}
 .header_top_right > p{color:#fff; display:inline-block; float:right; font:bold 12px sans-serif; margin-bottom:0; padding-bottom:20px; padding-right:8px; padding-top:20px}
 .header_bottom{background-color:var(--primary-color); display:inline; float:left; padding:15px 30px 15px; width:100%}
-.logo_area{display:inline; float:left; width:31%}
+.logo_area{display:inline; float:left; width:30%}
 .logo{font-size:45px; font-weight:bold; color:#000; font-family:'Varela',sans-serif}
 .logo img{max-width:100%}
 .logo img:hover{opacity:1}
@@ -80,6 +80,7 @@ img:hover{opacity:0.75}
 .add_banner img{width:100%; height:100%}
 #navArea{float:left; display:inline; width:100%; padding:0 30px; background-color:var(--primary-color)}
 .navbar{border:medium none; border-radius:0}
+.navbar-dm {float:right;color: #ddd;font-family: 'Oswald',sans-serif;display: inline-block;height: 50px;line-height: 50px;padding: 0 0px;text-shadow: 0 1px 1px #000;text-transform: uppercase;-webkit-transition: all 0.5s;-mz-transition: all 0.5s;-ms-transition: all 0.5s;-o-transition: all 0.5s;transition: all 0.5s}
 .navbar-inverse .navbar-nav > li > a{border-left:1px solid #383838; color:#ddd; font-family:'Oswald',sans-serif; display:inline-block; height:50px; line-height:50px; padding:0 14px; text-shadow:0 1px 1px #000; text-transform:uppercase; -webkit-transition:all 0.5s; -mz-transition:all 0.5s; -ms-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s}
 .navbar-inverse .navbar-nav > li:first-child a{border:none}
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus{ color:#fff}
